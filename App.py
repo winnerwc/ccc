@@ -8,5 +8,9 @@ def hello_world():
     return 'Hello, Flask!'
 
 
+@app.route('/user')
+def hello_world():
+    return 'Hello, Flask!'
+
 if __name__ == '__main__':
     app.run()
