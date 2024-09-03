@@ -5,6 +5,108 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d6e1dfa-4aaf-47fd-b0f7-73b78e88dc7c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/static/css/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/datatables.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/fullcalendar.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/plugins.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/style.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiEyp8kv8JHgFVrJJbecmNE.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiEyp8kv8JHgFVrJJfecg.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/pxiEyp8kv8JHgFVrJJnecmNE.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/pattern-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/create-app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/datatables.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/fullcalendar.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/intro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/plugins.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/scripts.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/upgrade-plan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/users-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/widgets.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/widgets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/300-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/300-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/300-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/300-13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/300-14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/300-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/300-20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/300-21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/300-23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/300-25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/300-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/300-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/300-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/300-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/american-express.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/bebo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/css.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/demo9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/doc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/figma-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/france.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/germany.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/google-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/img-29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/img-31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/img-40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/infography.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/japan.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/kickstarter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/leaf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/logo-1-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/logo-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/mastercard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/pdf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/picture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/plurk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/spain.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/tower.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/tvit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/united-states.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/vimeo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/visa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/picture/volicity-9.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/flaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flaskProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
     </list>
@@ -51,6 +153,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/flaskProject/template",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,7 +167,13 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Python.testrequest">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\flaskProject\template" />
+      <recent name="D:\flaskProject\static" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flask server.Flask (App.py)">
     <configuration name="App " type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="flaskProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,7 +247,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -153,7 +262,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -163,8 +272,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.testrequest" />
         <item itemvalue="Flask server.Flask (App.py)" />
+        <item itemvalue="Python.testrequest" />
         <item itemvalue="Python.App " />
       </list>
     </recent_temporary>
@@ -181,7 +290,8 @@
       <workItem from="1725030475920" duration="403000" />
       <workItem from="1725071965337" duration="3674000" />
       <workItem from="1725075664776" duration="186000" />
-      <workItem from="1725179605341" duration="2823000" />
+      <workItem from="1725179605341" duration="3159000" />
+      <workItem from="1725370025562" duration="2348000" />
     </task>
     <servers />
   </component>
@@ -189,9 +299,9 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/flaskProject$testrequest.coverage" NAME="testrequest Coverage Results" MODIFIED="1725181797710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flaskProject$Flask__App_py_.coverage" NAME="Flask (App.py) Coverage Results" MODIFIED="1725182050540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flaskProject$testrequest.coverage" NAME="testrequest Coverage Results" MODIFIED="1725182699486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flaskProject$Flask__App_py_.coverage" NAME="Flask (App.py) Coverage Results" MODIFIED="1725372224399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flaskProject$main.coverage" NAME="main Coverage Results" MODIFIED="1725030370439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flaskProject$flaskProject.coverage" NAME="flaskProject Coverage Results" MODIFIED="1725180411461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flaskProject$flaskProject.coverage" NAME="flaskProject Coverage Results" MODIFIED="1725370495515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

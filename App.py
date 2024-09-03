@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from flask import Flask,jsonify,request
+from flask import Flask,jsonify,request, render_template
 from Model import db,Users,Baselines
 
 app = Flask(__name__)
@@ -10,7 +10,7 @@ db.init_app(app)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, Flask!'
+    return render_template("index.html")
 
 # 路由函数，用于获取所有用户数据
 @app.route('/users', methods=['GET'])
