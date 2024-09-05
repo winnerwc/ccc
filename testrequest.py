@@ -2,7 +2,7 @@ import requests
 import json
 
 # 定义 POST 请求的 URL
-url = 'http://127.0.0.1:5000/baseline'
+url = 'http://127.0.0.1:5000/projects/project_1'
 
 # 插入测试数据
 test_data = [
@@ -18,20 +18,13 @@ test_data = [
     {"baseline_name": "Test Baseline 10", "baseline_status": "Active", "owner": "Jack"}
 ]
 
-for data in test_data:
-    # 定义要发送的数据
-    send_data = {
-        "baseline_name": data['baseline_name'],
-        "baseline_status": data['baseline_status'],
-        "owner": data['owner']
-    }
 
-    # 将数据转换为 JSON 格式
-    headers = {'Content-Type': 'application/json'}
+# 将数据转换为 JSON 格式
+headers = {'Content-Type': 'application/json'}
 
-    # 发送 POST 请求
-    response = requests.post(url, data=json.dumps(data), headers=headers)
+# 发送 POST 请求
+response = requests.get(url, headers=headers)
 
-    # 输出响应的状态码和内容
-    print(f"Response Status Code: {response.status_code}")
-    print(f"Response Content: {response.json()}")
+# 输出响应的状态码和内容
+print(f"Response Status Code: {response.status_code}")
+print(f"Response Content: {response.json()}")

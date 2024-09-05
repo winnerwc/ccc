@@ -1,7 +1,9 @@
 from datetime import datetime
 
 from flask import Flask,jsonify,request, render_template
-from Model import db,Users,Baselines
+from Model import db,Users,Baselines,Project
+from sqlalchemy.sql import text
+import re
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:123456@localhost/testdb'
@@ -46,6 +48,43 @@ def create_baseline():
 def get_baseline():
     baselines = Baselines.query.all()
     return jsonify([baseline.to_dict() for baseline in baselines])
+
+
+def sanitize_table_name(table_name):
+    # 只允许字母、数字和下划线
+    sanitized = re.sub(r'[^a-zA-Z0-9_]', '', table_name)
+    return sanitized
+
+@app.route('/projects/<project_name>', methods=['GET'])
+def get_projects(project_name):
+    # 清理并验证表名
+    sanitized_project_name = sanitize_table_name(project_name)
+
+    table_name = f'{sanitized_project_name.lower()}'
+    print(table_name)
+    # 构建查询语句，并使用text()函数显式声明
+    query = text(f'SELECT * FROM {table_name}')
+
+    try:
+        # 执行查询
+        result = db.session.execute(query)
+
+        # 将查询结果转换为列表
+        projects = []
+        for row in result:
+            # 将每一行转换为字典并追加到列表中
+            print(row)
+            row_dict = dict(row._mapping.items())
+            projects.append(row_dict)
+
+        return jsonify(projects), 200
+        # projects = db.session.execute(query)
+        # # 将查询结果转换为列表
+        # #projects = [dict(row) for row in result]
+        # print([dict(row) for row in projects])
+        # return jsonify([project.to_dict() for project in projects])
+    except Exception as e:
+        return jsonify({'error': f'Failed to fetch data from {table_name}: {str(e)}'}), 500
 
 if __name__ == '__main__':
     app.run()

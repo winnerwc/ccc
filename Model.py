@@ -35,3 +35,28 @@ class Baselines(db.Model):
             'owner': self.owner,
             'timestamp': self.timestamp.isoformat()
         }
+
+
+class Project(db.Model):
+    __tablename__ = 'project_1'
+    id = db.Column(db.Integer, primary_key=True)
+    project_name = db.Column(db.String(100), nullable=False)
+    job_name = db.Column(db.String(100), nullable=False)
+    job_num = db.Column(db.Integer, nullable=False)
+    job_status = db.Column(db.String(50), nullable=False)
+    fail_reason = db.Column(db.Text)
+    owner = db.Column(db.String(100), nullable=False)
+    time = db.Column(db.DateTime, default=datetime.utcnow)
+
+    def to_dict(self):
+        """ 将模型转换为字典 """
+        return {
+            'id': self.id,
+            'project_name': self.project_name,
+            'job_name': self.job_name,
+            'job_num': self.job_num,
+            'job_status': self.timestamp.job_status(),
+            'fail_reason': self.fail_reason,
+            'owner': self.owner,
+            'time': self.time
+        }

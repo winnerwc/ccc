@@ -9,6 +9,82 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
+            $('#fetchProjectButton').click(function () {
+                // AJAX 请求获取数据
+                var projectName = 'project_1'; // 假定你要查询的项目名为 'project_1'
+                $.ajax({
+                    url: `/projects/${projectName}`,
+                    method: 'GET',
+                    success: function (data) {
+                        // 清空现有的表格行
+                        $('#Projectbody').empty();
+                        // 动态填充表格
+                        $.each(data, function (index, project) {
+                            var row = `
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="d-flex justify-content-start flex-column">
+                                                <a href="#" class="text-dark fw-bolder text-hover-primary fs-6">${project.id}</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="d-flex justify-content-start flex-column">
+                                                <a href="#" class="text-dark fw-bolder text-hover-primary fs-6">${project.project_name}</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="d-flex justify-content-start flex-column">
+                                                <a href="#" class="text-dark fw-bolder text-hover-primary fs-6">${project.job_name}</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="d-flex justify-content-start flex-column">
+                                                <a href="#" class="text-dark fw-bolder text-hover-primary fs-6">${project.job_num}</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="d-flex justify-content-start flex-column">
+                                                <a href="#" class="text-dark fw-bolder text-hover-primary fs-6">${project.job_status}</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block fs-6">${project.fail_reason}</a>
+                                    </td>
+                                    <td class="text-end">
+                                        <div class="d-flex flex-column w-100 me-2">
+                                            <div class="d-flex flex-stack mb-2">
+                                                <span class="text-muted me-2 fs-7 fw-bold">${project.owner}</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-end flex-shrink-0">
+                                            <div class="d-flex flex-stack mb-2">
+                                                <span class="text-muted me-2 fs-7 fw-bold">${new Date(project.time).toLocaleString()}</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            `;
+                            $('#Projectbody').append(row);
+                        });
+                    },
+                    error: function (error) {
+                        console.error('Error fetching data:', error);
+                        alert('Failed to fetch data. Please check the console for more details.');
+                    }
+                });
+            });
             // 为按钮绑定点击事件
             $('#fetchDataButton').click(function () {
                 // AJAX 请求获取数据
@@ -17,7 +93,7 @@
                     method: 'GET',
                     success: function (data) {
                         // 清空现有的表格行
-                        $('tbody').empty();
+                        $('#Baselinebody').empty();
 
                         // 动态填充表格
                         $.each(data, function (index, baseline) {
@@ -54,7 +130,7 @@
                                     </td>
                                 </tr>
                             `;
-                            $('tbody').append(row);
+                            $('#Baselinebody').append(row);
                         });
                     },
                     error: function (error) {
@@ -97,6 +173,7 @@
     <div class="container mt-5">
         <!-- 按钮，用于触发数据获取 -->
         <button id="fetchDataButton" class="btn btn-primary">Fetch Baselines</button>
+        <button id="fetchProjectButton" class="btn btn-primary">Fetch Project</button>
         <br><br>
         <!-- 添加Baseline的表单 -->
         <form id="addBaselineForm">
@@ -132,7 +209,31 @@
                 </tr>
             </thead>
             <!-- 表体 -->
-            <tbody>
+            <tbody id="Baselinebody">
+            </tbody>
+        </table>
+         <!-- 表格 -->
+        <table class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4">
+            <!-- 表头 -->
+            <thead>
+                <tr class="fw-bolder text-muted">
+                    <th class="w-25px">
+                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                            <input class="form-check-input" type="checkbox" value="1" data-kt-check="true" data-kt-check-target=".widget-9-check">
+                        </div>
+                    </th>
+                    <th class="min-w-200px">id</th>
+                    <th class="min-w-150px">project_name</th>
+                    <th class="min-w-150px">job_name</th>
+                    <th class="min-w-100px text-end">job_num</th>
+                    <th class="min-w-150px">job_status</th>
+                    <th class="min-w-150px">fail_reason</th>
+                    <th class="min-w-150px">owner</th>
+                    <th class="min-w-100px text-end">time</th>
+                </tr>
+            </thead>
+            <!-- 表体 -->
+            <tbody id="Projectbody">
             </tbody>
         </table>
     </div>
