@@ -63,15 +63,61 @@
                     }
                 });
             });
+            // 为提交按钮绑定点击事件
+            $('#submitBaselineButton').click(function (event) {
+                event.preventDefault(); // 阻止表单默认提交行为
+
+                var baselineName = $('#baselineNameInput').val();
+                var baseline_status = $('#statusInput').val();
+                var owner = $('#ownerInput').val();
+                var time = new Date().toISOString(); // 获取当前时间
+
+                // AJAX POST 请求提交数据
+                $.ajax({
+                    url: '/baseline',
+                    method: 'POST',
+                    data: JSON.stringify({baseline_name: baselineName, baseline_status: baseline_status, owner: owner, time: time}),
+                    contentType: 'application/json',
+                    success: function (response) {
+                        alert('Baseline added successfully!');
+                        // 重新加载数据
+                        $('#fetchDataButton').click();
+                    },
+                    error: function (error) {
+                        console.error('Error adding baseline:', error);
+                        alert('Failed to add baseline. Please check the console for more details.');
+                    }
+                });
+            });
         });
     </script>
 </head>
 <body>
+    <!-- 容器，用于居中和边距 -->
     <div class="container mt-5">
+        <!-- 按钮，用于触发数据获取 -->
         <button id="fetchDataButton" class="btn btn-primary">Fetch Baselines</button>
         <br><br>
+        <!-- 添加Baseline的表单 -->
+        <form id="addBaselineForm">
+            <div class="mb-3">
+                <label for="baselineNameInput" class="form-label">Baseline Name</label>
+                <input type="text" class="form-control" id="baselineNameInput" placeholder="Enter Baseline Name">
+            </div>
+            <div class="mb-3">
+                <label for="statusInput" class="form-label">Status</label>
+                <input type="text" class="form-control" id="statusInput" placeholder="Enter Status">
+            </div>
+            <div class="mb-3">
+                <label for="ownerInput" class="form-label">Owner</label>
+                <input type="text" class="form-control" id="ownerInput" placeholder="Enter Owner">
+            </div>
+            <button id="submitBaselineButton" class="btn btn-success">Add Baseline</button>
+        </form>
+        <br>
+        <!-- 表格 -->
         <table class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4">
-            <!--begin::Table head-->
+            <!-- 表头 -->
             <thead>
                 <tr class="fw-bolder text-muted">
                     <th class="w-25px">
@@ -85,11 +131,9 @@
                     <th class="min-w-100px text-end">Time</th>
                 </tr>
             </thead>
-            <!--end::Table head-->
-            <!--begin::Table body-->
+            <!-- 表体 -->
             <tbody>
             </tbody>
-            <!--end::Table body-->
         </table>
     </div>
 

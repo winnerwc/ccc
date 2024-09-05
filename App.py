@@ -41,6 +41,7 @@ def create_baseline():
     db.session.commit()
     return jsonify(new_baseline.to_dict()), 201
 
+
 @app.route('/baselines', methods=['GET'])
 def get_baseline():
     baselines = Baselines.query.all()
