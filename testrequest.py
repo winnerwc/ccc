@@ -2,7 +2,7 @@ import requests
 import json
 
 # 定义 POST 请求的 URL
-url = 'http://127.0.0.1:5000/projects/project_1'
+url = 'http://127.0.0.1:5000/projects/project_2'
 
 # 插入测试数据
 test_data = [

@@ -1,0 +1,40 @@
+/* 自定义样式 */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* 使滚动更流畅 */
+}
+
+#resultsTable {
+    font-size: 0.9em; /* 调整字体大小 */
+    border-collapse: collapse; /* 边框合并 */
+}
+
+#resultsTable th,
+#resultsTable td {
+    padding: 12px 18px; /* 调整单元格内边距 */
+    vertical-align: middle; /* 垂直居中 */
+}
+
+#resultsTable thead th {
+    background-color: #343a40; /* 头部背景色 */
+    color: white; /* 文字颜色 */
+    font-weight: bold; /* 加粗文字 */
+}
+
+#resultsTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* 偶数行背景色 */
+}
+
+#resultsTable tbody tr:hover {
+    background-color: #e0e0e0; /* 鼠标悬停行背景色 */
+}
+
+#resultsTable tbody td a {
+    color: #007bff; /* 链接颜色 */
+    text-decoration: none; /* 移除下划线 */
+}
+
+#resultsTable tbody td a:hover {
+    color: #0056b3; /* 鼠标悬停链接颜色 */
+    text-decoration: underline; /* 鼠标悬停链接下划线 */
+}
