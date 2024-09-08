@@ -1,9 +1,5 @@
 import requests
 import json
-
-# 定义 POST 请求的 URL
-url = 'http://127.0.0.1:5000/projects/project_2'
-
 # 插入测试数据
 test_data = [
     {"baseline_name": "Test Baseline 1", "baseline_status": "Active", "owner": "Alice"},
@@ -18,13 +14,53 @@ test_data = [
     {"baseline_name": "Test Baseline 10", "baseline_status": "Active", "owner": "Jack"}
 ]
 
+# 测试用例数据
+test_cases = [
+    {
+        "project_name": "Project_1",
+        "data": {
+            "job_name": "Task_5",
+            "job_num": 1001,
+            "job_status": "Completed",
+            "fail_reason": "",
+            "owner": "Alice",
+        }
+    },
+    {
+        "project_name": "Project_1",
+        "data": {
+            "job_name": "Task_7",
+            "job_num": 1002,
+            "job_status": "Failed",
+            "fail_reason": "Resource limit exceeded",
+            "owner": "Bob",
+        }
+    },
+    {
+        "project_name": "Project_2",
+        "data": {
+            "job_name": "Task_9",
+            "job_num": 1003,
+            "job_status": "Running",
+            "fail_reason": "",
+            "owner": "Charlie",
+        }
+    }
+]
 
-# 将数据转换为 JSON 格式
-headers = {'Content-Type': 'application/json'}
+# 测试服务器地址
+base_url = "http://localhost:5000"
 
-# 发送 POST 请求
-response = requests.get(url, headers=headers)
-
-# 输出响应的状态码和内容
-print(f"Response Status Code: {response.status_code}")
-print(f"Response Content: {response.json()}")
+# 执行测试用例
+for test_case in test_cases:
+    project_name = test_case["project_name"]
+    data = test_case["data"]
+    # 构造 URL
+    url = f"{base_url}/projects/{project_name}"
+    # 发送 POST 请求
+    response = requests.post(url, json=data)
+    # 检查响应状态码
+    if response.status_code == 201:
+        print(f"Test case passed for project '{project_name}': {response.json()}")
+    else:
+        print(f"Test case failed for project '{project_name}': {response.status_code}, {response.text}")
